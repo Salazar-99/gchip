@@ -1,0 +1,11 @@
+sim/build/
+**/obj_dir/
+*.vcd
+*.fst
+*.vpd
+*.wlf
+*.o
+*.a
+*.d
+*.so
+*.log

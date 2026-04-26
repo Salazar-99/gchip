@@ -1,0 +1,17 @@
+{
+  "name": "gchip",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vscode.cpptools",
+        "mshr-h.VerilogHDL",
+        "timonwong.shellcheck",
+        "surfer-project.surfer"
+      ]
+    }
+  },
+  "remoteUser": "vscode"
+}
