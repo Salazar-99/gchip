@@ -4,7 +4,7 @@ TB_DIR    := $(ROOT)/tb
 WAVES     := $(ROOT)/waves
 BUILD     := $(ROOT)/sim/build
 
-TOP       ?= adder_tb
+TOP       ?= tb
 WAVE_FILE ?= $(WAVES)/dump.vcd
 
 VERILATOR       ?= verilator
@@ -13,7 +13,7 @@ VERILATOR_FLAGS := --binary --trace --timing -j 0 -Wall \
                    -I$(RTL_DIR) -I$(TB_DIR) \
                    --top-module $(TOP)
 
-SOURCES := $(RTL_DIR)/adder.sv $(TB_DIR)/adder_tb.sv
+SOURCES := $(RTL_DIR)/cpu.sv $(TB_DIR)/tb.sv
 
 .PHONY: sim wave test clean tools
 
